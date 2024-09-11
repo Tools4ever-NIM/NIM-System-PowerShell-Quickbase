@@ -34,13 +34,6 @@ function Idm-SystemInfo {
                 value = 'customer.quickbase.com'
             }
             @{
-                name = 'report_id'
-                type = 'textbox'
-                label = 'Report ID'
-                description = 'ID for the report to retrieve'
-                value = ''
-            }
-            @{
                 name = 'app_id'
                 type = 'textbox'
                 label = 'App ID'
