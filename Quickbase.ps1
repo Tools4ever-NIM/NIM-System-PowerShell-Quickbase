@@ -22,7 +22,7 @@ function Idm-SystemInfo {
         [string] $ConnectionParams
     )
 
-    Log info "-Connection=$Connection -TestConnection=$TestConnection -Configuration=$Configuration -ConnectionParams='$ConnectionParams'"
+    Log verbose "-Connection=$Connection -TestConnection=$TestConnection -Configuration=$Configuration -ConnectionParams='$ConnectionParams'"
 
     if ($Connection) {
         @(
@@ -120,7 +120,7 @@ function Idm-SystemInfo {
         @()
     }
 
-    Log info "Done"
+    Log verbose "Done"
 }
 
 function Idm-OnUnload {
@@ -146,7 +146,7 @@ function Idm-Dispatcher {
         [string] $FunctionParams
     )
     
-    Log info "-Class='$Class' -Operation='$Operation' -GetMeta=$GetMeta -SystemParams='$SystemParams' -FunctionParams='$FunctionParams'"
+    Log verbose "-Class='$Class' -Operation='$Operation' -GetMeta=$GetMeta -SystemParams='$SystemParams' -FunctionParams='$FunctionParams'"
 
     $ConnectionParams = ConvertFrom-Json2 $SystemParams
 
@@ -211,7 +211,7 @@ function Idm-Dispatcher {
         }
     }
 
-    Log info "Done"
+    Log verbose "Done"
 }
 
 function Get-QuickbaseColumnData {
