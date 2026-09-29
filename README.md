@@ -1,5 +1,7 @@
 # Quickbase
 
+Read the [Quickbase integration documentation](https://docs.nimsuite.com/en/integrations/quickbase) for connector details and related guides.
+
 <img src="https://github.com/user-attachments/assets/9a81cdb0-2aa8-4ecd-a706-e79963812fb1" width="256px" />
 
 
